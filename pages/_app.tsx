@@ -10,6 +10,8 @@ import '@fontsource/poppins/700.css';
 import '@fontsource/poppins/800.css';
 import '@fontsource/poppins/900.css';
 
+import '../styles/tailwind.css';
+
 import type { AppProps } from 'next/app';
 import { useNetworkSync } from '../hooks/auth/useNetworkSync';
 

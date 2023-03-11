@@ -12,6 +12,9 @@ const nextConfig = {
     };
     return config;
   },
+  images: {
+    domains: ['devnet-media.elrond.com'],
+  },
   reactStrictMode: false,
   async rewrites() {
     if (!process.env.MULTIVERSX_PRIVATE_API) {

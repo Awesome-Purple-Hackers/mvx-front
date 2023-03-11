@@ -18,11 +18,11 @@ export const MainLayout: FC<PropsWithChildren<MetaHeadProps>> = ({
         metaUrl={metaUrl}
       />
       <div className="min-h-[calc(100vh-120px)] pb-4">
-        <div className="max-w-7xl px-4 mx-auto">
+        <div className="px-4 mx-auto max-w-7xl">
           <div>{children}</div>
         </div>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };
