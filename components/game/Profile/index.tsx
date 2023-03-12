@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useAccount } from '../../../hooks/auth/useAccount';
 import { useLogin } from '../../../hooks/auth/useLogin';
+import { MultiversXService, Response } from '../../sdk/multiversXService.sdk';
+
 import { useLoginInfo } from '../../../hooks/auth/useLoginInfo';
 import Button from '../Button';
 import Card from '../Card';
@@ -9,6 +11,16 @@ const Profile = () => {
   const { address } = useAccount();
 
   // console.log(' info', address);
+
+  const handleTest = () => {
+    MultiversXService.mintNft('asdasdas', 42).then((res) =>
+      console.log('res', res)
+    );
+  };
+
+  useEffect(() => {
+    handleTest();
+  }, []);
 
   console.log('hi');
 
