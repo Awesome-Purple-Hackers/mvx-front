@@ -38,32 +38,39 @@ const Claim = () => {
     });
   };
 
-  const handleClaim = async () => {};
   return (
-    <div className="w-full">
-      <Card>
-        {queryResult > 0 ? (
-          <>
-            <div className="mb-7">
-              <p className="text-xl">You can claim {queryResult} NFTs!</p>
+    <div className=" flex flex-col justify-center w-4/5 mt-5">
+      <p className="text-2xl">Claim</p>
+      <div>
+        <Card className="w-full">
+          {queryResult > 0 ? (
+            <>
+              <div className="mb-7">
+                <p className="text-xl">You can claim {queryResult} NFTs!</p>
+                <p className="text-sm">
+                  Good job, traveler! You can now claim your items on the
+                  blockchain.
+                </p>
+              </div>
+              <div className="w-full">
+                <Button
+                  onClick={() => handleSendTx()}
+                  customClassName="bg-blue-500 w-full"
+                >
+                  Claim
+                </Button>
+              </div>
+            </>
+          ) : (
+            <div className="">
+              <p className="text-xl">No NFTs to claim!</p>
               <p className="text-sm">
-                Good job, traveler! You can now claim your items on the
-                blockchain.
+                Keep playing and earn items for completing quests!
               </p>
             </div>
-            <div className="w-full">
-              <Button
-                onClick={() => handleSendTx()}
-                customClassName="bg-blue-500 w-full"
-              >
-                Claim
-              </Button>
-            </div>
-          </>
-        ) : (
-          <div></div>
-        )}
-      </Card>
+          )}
+        </Card>
+      </div>
     </div>
   );
 };
