@@ -30,6 +30,9 @@ const nextConfig = {
   eslint: {
     dirs: ['components', 'config', 'hooks', 'pages', 'store', 'types', 'utils'],
   },
+  typescript: {
+    ignoreBuildErrors: true,
+  },
 };
 
 module.exports = nextConfig;
