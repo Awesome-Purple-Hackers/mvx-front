@@ -22,7 +22,7 @@ const Inventory = () => {
 
   useEffect(() => {
     data && data.length > 0 && setUserNFTs(data);
-  }, [data]);
+  }, [data, setUserNFTs]);
 
   console.log('userNFTs', userNFTs);
 
