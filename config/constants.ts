@@ -9,3 +9,6 @@ export const defaultMetaTags = {
   description: 'Open source Dapp template for the MultiversX blockchain.',
   image: `${dappHostname}/og-image.png`,
 };
+
+export const SC_ADDRESS =
+  'erd1qqqqqqqqqqqqqpgqlrkaz6a4ke7s8zl5n6xg87dqkps4xem4j8dq29v86m';

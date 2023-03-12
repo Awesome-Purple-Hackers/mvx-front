@@ -37,7 +37,7 @@ export const LoginModalButton: FC = () => {
             {isLoggingIn && (
               <div className="flex backdrop-blur-sm bg-black/70 justify-center absolute inset-0">
                 <div
-                  className="animate-spin inline-block w-6 h-6 border-[3px] border-current border-t-transparent text-color2-base rounded-full"
+                  className="animate-spin inline-block w-6 h-6 border-[3px] border-current border-t-transparent text-color1-base rounded-full"
                   role="status"
                   aria-label="loading"
                 >
